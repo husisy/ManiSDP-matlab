@@ -26,4 +26,5 @@ Manifest.toml
 # python stuff
 __pycache__/
 *.egg-info/
+python/manisdp/_version.py
 

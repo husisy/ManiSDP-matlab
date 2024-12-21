@@ -3,8 +3,14 @@
 quickstart
 
 ```bash
-pip install git+https://github.com/husisy/zzz233.git@zc-dev
+pip install git+https://github.com/husisy/ManiSDP-matlab.git@zc-dev
 ```
+
+or try it on browser
+
+<a target="_blank" href="https://github.com/husisy/ManiSDP-matlab/blob/zc-dev/example_python/draft01.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 
 ## Example: `manisdp_onlyunitdiag()`
 
@@ -13,6 +19,12 @@ max-cut problem
 adopted from `example/example_maxcut.m` [link](https://github.com/wangjie212/ManiSDP-matlab/blob/main/example/example_maxcut.m)
 
 save `data/Gset/G32.txt` in the repo [link](https://github.com/wangjie212/ManiSDP-matlab/blob/main/data/Gset/G32.txt) as `G32.txt` on your local machine.
+
+$$ \begin{align*}\min_{X}&\;\mathrm{Tr}[CX]\\
+\mathrm{s.t.}&\begin{cases}
+X\succeq0\\
+X_{ii}=1
+\end{cases}\end{align*} $$
 
 ```python
 import scipy.sparse
@@ -24,12 +36,6 @@ return_info, Y = manisdp_onlyunitdiag(matC, p0=40)
 print('cost:', return_info['cost'])
 X = Y.T @ Y
 ```
-
-$$ \begin{align*}\min_{X}&\;\mathrm{Tr}[CX]\\
-\mathrm{s.t.}&\begin{cases}
-X\succeq0\\
-X_{ii}=1
-\end{cases}\end{align*} $$
 
 ## Example: `manisdp_unittrace()`
 
