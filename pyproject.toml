@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "manisdp"
+authors = [
+    { name = "husisy", email = "please.contact.me.via.github@mail.me" },
+]
+description = "python package for manisdp"
+readme = "README.md"
+# keywords = ["quantum information"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+requires-python = ">= 3.10"
+dependencies = [
+    'numpy',
+    'scipy',
+    'tqdm',
+    'sympy',
+    # 'torch', #torch is optional
+    'cvxpy',
+    'pymanopt',
+]
+dynamic = ["version"]
+
+[tool.setuptools.packages.find]
+where = ["python"]
+
+[tool.setuptools_scm]
+write_to = "python/manisdp/_version.py"
