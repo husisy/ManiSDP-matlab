@@ -8,7 +8,7 @@ pip install git+https://github.com/husisy/ManiSDP-matlab.git@zc-dev
 
 or try it on browser
 
-<a target="_blank" href="https://github.com/husisy/ManiSDP-matlab/blob/zc-dev/example_python/draft01.ipynb">
+<a target="_blank" href="https://colab.research.google.com/github/husisy/ManiSDP-matlab/blob/zc-dev/example_python/draft01.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
