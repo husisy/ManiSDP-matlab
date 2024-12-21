@@ -25,7 +25,8 @@ print('cost:', return_info['cost'])
 X = Y.T @ Y
 ```
 
-$$ \begin{align*}\min_{X}&\;\mathrm{Tr}[CX]\\s.t.&\begin{cases}
+$$ \begin{align*}\min_{X}&\;\mathrm{Tr}[CX]\\
+\mathrm{s.t.}&\begin{cases}
 X\succeq0\\
 X_{ii}=1
 \end{cases}\end{align*} $$
@@ -36,7 +37,8 @@ theta example?
 
 adopted from `example/example_theta.m` [link](https://github.com/wangjie212/ManiSDP-matlab/blob/main/example/example_theta.m)
 
-$$ \begin{align*} \min_{X}&\mathrm{Tr}[CX]\\s.t.&\begin{cases}
+$$ \begin{align*} \min_{X}&\mathrm{Tr}[CX]\\
+\mathrm{s.t.}&\begin{cases}
 X\succeq0\\
 \mathrm{Tr}[A_{i}X]=b_{i}
 \end{cases} \end{align*} $$
